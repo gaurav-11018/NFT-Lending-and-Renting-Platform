@@ -343,7 +343,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import NFTLendingForm from "./components/NFTLendingForm";
 import { ethers } from "ethers";
-// import * as ethers from "ethers";
+// const ethers = require("ethers");
 
 import { contractABI, contractAddress } from "./contract-config";
 
