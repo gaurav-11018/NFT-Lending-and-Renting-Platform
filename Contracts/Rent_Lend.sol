@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract NFTLendingPlatform {
     struct Loan {
@@ -12,8 +12,10 @@ contract NFTLendingPlatform {
         uint256 startTime;
         uint256 duration;
         uint256 collateralAmount;
-        uint256 feeAmount;
+        uint256 dailyFeeAmount;
+        uint256 maxRentDays;
         bool isActive;
+        string ipfsCID;
     }
 
     mapping(address => mapping(uint256 => Loan)) public loans;
@@ -23,7 +25,9 @@ contract NFTLendingPlatform {
         uint256 tokenId,
         uint256 duration,
         uint256 collateralAmount,
-        uint256 feeAmount
+        uint256 dailyFeeAmount,
+        uint256 maxRentDays,
+        string memory ipfsCID
     ) external {
         IERC721 nft = IERC721(nftAddress);
         require(nft.ownerOf(tokenId) == msg.sender, "Not the owner of the NFT");
@@ -37,8 +41,10 @@ contract NFTLendingPlatform {
             startTime: 0,
             duration: duration,
             collateralAmount: collateralAmount,
-            feeAmount: feeAmount,
-            isActive: true
+            dailyFeeAmount: dailyFeeAmount,
+            maxRentDays: maxRentDays,
+            isActive: true,
+            ipfsCID: ipfsCID
         });
     }
 
@@ -87,16 +93,17 @@ contract NFTLendingPlatform {
         );
 
         IERC20 feeToken = IERC20(feeTokenAddress);
+        uint256 totalFeeAmount = loan.dailyFeeAmount * loan.maxRentDays;
         require(
-            feeToken.balanceOf(msg.sender) >= loan.feeAmount,
+            feeToken.balanceOf(msg.sender) >= totalFeeAmount,
             "Insufficient fee balance"
         );
         require(
-            feeToken.allowance(msg.sender, address(this)) >= loan.feeAmount,
+            feeToken.allowance(msg.sender, address(this)) >= totalFeeAmount,
             "Fee allowance insufficient"
         );
 
-        feeToken.transferFrom(msg.sender, loan.lender, loan.feeAmount);
+        feeToken.transferFrom(msg.sender, loan.lender, totalFeeAmount);
 
         loan.borrower = address(0);
         loan.startTime = 0;
