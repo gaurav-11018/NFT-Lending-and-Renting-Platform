@@ -1,0 +1,39 @@
+.nft-lending-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .nft-lending-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .nft-lending-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nft-lending-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .nft-lending-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nft-lending-form button:hover {
+    background-color: #0056b3;
+  }
+  
