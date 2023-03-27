@@ -426,7 +426,7 @@ import { Route, Link, Routes } from "react-router-dom";
 import "./App.css";
 import NFTLendingForm from "./components/NFTLendingForm";
 import NFTList from "./components/NFTList";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import ConnectButton from "./components/ConnectButton";
 import { ethers } from "ethers";
 import { contractABI, contractAddress } from "./contract-config";
 

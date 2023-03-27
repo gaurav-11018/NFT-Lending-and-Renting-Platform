@@ -1,0 +1,44 @@
+.nft-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .nft-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .nft-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .rent-price {
+    margin-top: 8px;
+  }
+  .borrow-button {
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .borrow-button:hover {
+    background-color: #3700b3;
+  }
+  
