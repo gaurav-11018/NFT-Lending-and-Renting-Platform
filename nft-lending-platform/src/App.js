@@ -498,7 +498,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="app-header"></header>
+      <header>
+        <h1>NFT Lending and Renting Platform</h1>
+      </header>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/lend">Lend NFT</Link>
