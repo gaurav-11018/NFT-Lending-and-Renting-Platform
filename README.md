@@ -5,7 +5,7 @@ Hey babe if you are reading this just know that I love you
 
 Babe! I had the widest smile when I read this now. Absolutely took me by surprise, I love you sooo much ♥️ -->
 
-<!-- COntract deployed at testnet-mumbai-polygon: 0xb90ba369335aBA8e6C5F21D7A4283cCF30b99932 -->
+
 ## NFT Lending and Renting Platform
 This project is a decentralized NFT Lending and Renting Platform built on the Ethereum network. Users can lend their NFTs to other users in exchange for collateral and daily fees. The platform enables NFT owners to monetize their assets and borrowers to temporarily use NFTs without having to purchase them.
 
@@ -49,6 +49,9 @@ This function allows lenders to retrieve their NFTs by providing the NFT address
 
 #### withdrawCollateral
 This function allows users to withdraw collateral by providing the collateral token address and the amount. The user must have sufficient collateral balance in the contract to cover the withdrawal amount.
+
+#### Contract deployed at testnet-mumbai-polygon: 0xb90ba369335aBA8e6C5F21D7A4283cCF30b99932
+
 
 ## Frontend
 The frontend is built using React and consists of several components that provide a user-friendly interface for interacting with the platform.
