@@ -52,7 +52,7 @@ This function allows users to withdraw collateral by providing the collateral to
 
 #### Contract deployed at testnet-mumbai-polygon: 0xb90ba369335aBA8e6C5F21D7A4283cCF30b99932
 
-### Also this contract is now live on shardeum : 0x964F0bc96147A341ad5A99678a6B72B3b56f854c
+### Also this contract is now live and deployed on shardeum : 0x964F0bc96147A341ad5A99678a6B72B3b56f854c
 ![Screenshot 2023-03-29 070244](https://user-images.githubusercontent.com/79459872/228404502-33f558f4-bf11-4260-9f92-1d214094c753.png)
 
 
