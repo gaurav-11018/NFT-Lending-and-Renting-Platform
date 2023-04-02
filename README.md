@@ -10,7 +10,7 @@ Babe! I had the widest smile when I read this now. Absolutely took me by surpris
 This project is a decentralized NFT Lending and Renting Platform built on the Ethereum network. Users can lend their NFTs to other users in exchange for collateral and daily fees. The platform enables NFT owners to monetize their assets and borrowers to temporarily use NFTs without having to purchase them.
 
 ## The problem NFT Lending and Renting Platform solves
-Tracks: Best hack built on Ethereum , Best hack built on Ethereum + Polygon , Best use of Filecoin and/or IPFS,Best use of decentralized storage using filecoin,Build Scalable Decentralized application on Shardeum
+
 
 The NFT Lending and Renting Platform addresses several challenges faced by the NFT ecosystem and its participants. Here's a breakdown of the problems it solves and the 
 benefits it provides:
